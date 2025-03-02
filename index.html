@@ -4,43 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aulão - Monetize Suas Habilidades</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gradient-to-r from-blue-900 to-blue-600 text-white flex justify-center items-center min-h-screen p-6">
-  <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl shadow-lg p-6 max-w-lg w-full text-center">
-    <!-- Foto em círculo -->
-  <div class="flex justify-center">
-  <img src="v.jpg" alt="Victor de Jesus" class="w-28 sm:w-32 h-28 sm:h-32 rounded-full border-4 border-orange-400 shadow-lg object-cover">
-</div>
-
-
-    <!-- Texto sobre o aulão -->
-    <h1 class="text-2xl font-bold text-orange-300">Aulão Gratuito: Monetize Suas Habilidades</h1>
-    <p class="mt-4 text-gray-200">
-      Nunca pensaste que podias viver das tuas habilidades? Eu também não!<strong>10 de março</strong>, no <strong>YouTube</strong>, vou ensinar-te o caminho para transformares as tuas habilidades numa fonte de rendimento online.
-    </p>
-
-    <!-- Vídeo do YouTube -->
-    <div class="my-6">
-      <iframe class="w-full h-48 rounded-lg shadow-md" src="https://www.youtube.com/embed/5n1wbmsdLq0?si=oF95EvxwrwuA55js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <!-- Botão para entrar no grupo do WhatsApp -->
-    <a href="https://chat.whatsapp.com/BowCCSaVV1k6rFUdxIcaR6" target="_blank" class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-md transition-all">Entrar no Grupo de Espera</a>
-    <!-- Seção de FAQs -->
-    <div class="mt-8 text-left">
-      <h2 class="text-xl font-bold text-orange-300 text-center">Perguntas Frequentes</h2>
-      <div class="mt-4 space-y-3">
-        <div class="faq bg-white bg-opacity-10 p-3 rounded-lg shadow">
-          <button class="faq-question w-full text-left font-semibold flex justify-between items-center">Preciso pagar algo para participar? <span class="text-blue-400">+</span></button>
-          <div class="faq-answer hidden text-gray-200 mt-2">Não! O aulão é 100% gratuito.</div>
+<body>
+  <div class="container">
+    <div class="card">
+      <!-- Header Section -->
+      <div class="header">
+        <div class="profile">
+          <img src="v.jpg" alt="Victor de Jesus" class="profile-img">
         </div>
-        <div class="faq bg-white bg-opacity-10 p-3 rounded-lg shadow">
-          <button class="faq-question w-full text-left font-semibold flex justify-between items-center">O que preciso para assistir? <span class="text-blue-400">+</span></button>
-          <div class="faq-answer hidden text-gray-200 mt-2">Basta um telemóvel ou computador com acesso à internet.</div>
+        <h1 class="title">Aulão Gratuito: <span class="highlight">Monetize Suas Habilidades</span></h1>
+        <p class="subtitle">Com Victor de Jesus</p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="content">
+        <div class="info-box">
+          <div class="info-icon"><i class="fas fa-calendar-alt"></i></div>
+          <div class="info-text">
+            <strong>10 de março</strong>
+            <span>Aula ao vivo no YouTube</span>
+          </div>
         </div>
-        <div class="faq bg-white bg-opacity-10 p-3 rounded-lg shadow">
-          <button class="faq-question w-full text-left font-semibold flex justify-between items-center">E se eu perder a aula ao vivo? <span class="text-blue-400">+</span></button>
-          <div class="faq-answer hidden text-gray-200 mt-2">A gravação ficará disponível por tempo limitado.</div>
+
+        <p class="description">
+          Nunca pensaste que podias viver das tuas habilidades? Eu também não! Neste aulão exclusivo, vou ensinar-te o caminho para transformares as tuas habilidades numa fonte de rendimento online.
+        </p>
+
+        <!-- Video Section -->
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/5n1wbmsdLq0?si=oF95EvxwrwuA55js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="cta-section">
+          <a href="https://chat.whatsapp.com/BowCCSaVV1k6rFUdxIcaR6" target="_blank" class="cta-button">
+            <i class="fab fa-whatsapp"></i> Entrar no Grupo de Espera
+          </a>
+          <p class="cta-note">Vagas limitadas! Garanta seu lugar agora.</p>
+        </div>
+
+        <!-- What You'll Learn Section -->
+        <div class="features-section">
+          <h2 class="section-title">O Que Você Vai Aprender</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+              <h3>Identificar Suas Habilidades</h3>
+              <p>Descubra como identificar habilidades valiosas que você já possui</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-globe"></i></div>
+              <h3>Presença Online</h3>
+              <p>Aprenda a criar uma presença digital que atrai clientes</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-euro-sign"></i></div>
+              <h3>Monetização</h3>
+              <p>Estratégias comprovadas para monetizar suas habilidades</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+              <h3>Escala</h3>
+              <p>Como escalar seu negócio online e aumentar seus rendimentos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question">
+                Preciso pagar algo para participar?
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer">
+                <p>Não! O aulão é 100% gratuito. Meu objetivo é compartilhar conhecimento valioso que pode transformar sua vida profissional.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                O que preciso para assistir?
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer">
+                <p>Basta um telemóvel ou computador com acesso à internet. A aula será transmitida pelo YouTube, então você pode assistir de qualquer dispositivo.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                E se eu perder a aula?
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer">
+                <p>A gravação ficará disponível por tempo limitado. Mas recomendo assistir ao vivo para poder interagir e fazer perguntas durante a transmissão.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Vou receber certificado?
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer">
+                <p>Não haverá certificado para este aulão gratuito, mas você sairá com conhecimento prático que pode aplicar imediatamente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>© 2024 Victor de Jesus. Todos os direitos reservados.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </div>
@@ -49,8 +135,34 @@
   <script>
     document.querySelectorAll('.faq-question').forEach(button => {
       button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
         const answer = button.nextElementSibling;
-        answer.classList.toggle('hidden');
+        const icon = button.querySelector('.faq-icon i');
+        
+        // Toggle current FAQ item
+        faqItem.classList.toggle('active');
+        answer.style.maxHeight = faqItem.classList.contains('active') ? 
+          answer.scrollHeight + "px" : "0";
+        
+        // Toggle icon
+        if (faqItem.classList.contains('active')) {
+          icon.classList.remove('fa-plus');
+          icon.classList.add('fa-minus');
+        } else {
+          icon.classList.remove('fa-minus');
+          icon.classList.add('fa-plus');
+        }
+        
+        // Close other FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem && item.classList.contains('active')) {
+            item.classList.remove('active');
+            item.querySelector('.faq-answer').style.maxHeight = "0";
+            const otherIcon = item.querySelector('.faq-icon i');
+            otherIcon.classList.remove('fa-minus');
+            otherIcon.classList.add('fa-plus');
+          }
+        });
       });
     });
   </script>
